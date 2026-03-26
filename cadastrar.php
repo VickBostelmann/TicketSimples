@@ -6,7 +6,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $senha_pura = $_POST['password']; // A senha que o usuário digitou
 
-    // --- AQUI ESTÁ A ATUALIZAÇÃO ---
     // password_hash cria uma "assinatura" da senha, tornando-a ilegível no banco
     $senha_segura = password_hash($senha_pura, PASSWORD_DEFAULT);
     // -------------------------------
