@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ':desc'       => $desc,
         ':valor'      => $valor,
         ':data'       => $data,
-        ':horario'    => $horario,    // Verifique se essa linha existe
+        ':horario'    => $horario,    
         ':user_id'    => $usuario_id,
         ':cliente_id' => $cliente_id
     ]);
